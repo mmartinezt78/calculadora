@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--link rel="stylesheet" href="https://www.solarlata/bootstrap.min.css"-->
+    <!--link rel="stylesheet" href="https://www.solarlatam.com/css/styles.css?v=js-I5em-LpiJQE2ysqEsBxEpEMA6dh-Qt9ieFioOs6w"-->
+    <!--link rel="stylesheet" href="https://www.solarlatam.com/css/theme.css?v=1Po5AOYAWokTbQk4yLaqe-gHKFpGNgBWvdC2gdzXzCs"-->
+    <!--link rel="stylesheet" href="https://www.solarlatam.com/css/all.min.css"-->
+    <!--link rel="stylesheet" href="https://www.solarlatam.com/css/noty.css"-->
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/noty.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>ENERLIFE - CALCULADORA</title>
+        
+    <link rel="icon" href="/img/favicon.png" sizes="150x150" />
+    <link rel="apple-touch-icon" href="/img/favicon.png" />
+    <meta name="msapplication-TileImage" content="~/img/favicon.png" />
+</head>
+
+<body id="home">
+  
+    
+<header>
+    <nav id="top-navbar" class="navbar navbar-expand-xl navbar-dark bg-transparent fixed-top trans">
+        <a class="navbar-brand" href="">
+            <img src="img/logo_header.png" alt="ENERLIFE" class="img-fluid">
+        </a>        
+    </nav>
+</header>
+
+
+<main>
+    <section id="get-quote">
+        <div class="container">
+            <div style="height: 100vh;" class="row search-form justify-content-center align-items-center" id="step-1">
+				<div class="col-lg-8 ">
+					<div class="card">
+						<div class="card-body">
+							<div class="heading">
+								<h1>Comenzar Cotizaci&#xF3;n</h1>
+							</div>
+							<div class="row">
+								<div class="col-md-8 pr-md-0">
+									<label class="small sr-only">Comenzar Cotizaci&#xF3;n</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="fa fa-map-marker-alt"></i></span>
+										</div>
+										<input type="text" class="form-control location-search-input" placeholder="Ingrese su direcci&#xF3;n" id="address-autocomplete" name="fullAddress" value="">
+										<div class="input-group-append">
+											<button class="btn btn-light dropdown-toggle" id="lblConectadoRed" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conectado a la red</button>
+											<div class="dropdown-menu" style="">
+												<a class="dropdown-item ongrid-change" data-ongrid="true" href="#">Conectado a la red</a>
+												<a class="dropdown-item ongrid-change" data-ongrid="false" href="#">Desconectado de la red</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="group" class="col-md-4 btn-group d-flex">
+									<button type="button" class="flex-grow-1 btn btn-primary" style="background:#90cb3A; border-color: #90cb3A;" id="butSearchAddress">Comenzar</button>
+									<button type="button" data-toggle="tooltip" data-placement="top" style="background:#90cb3A; border-color: #90cb3A;" title="" data-original-title="Utilizar mi ubicaci&#xF3;n" class="btn btn-primary" id="butGeolocate"><i class=" fas fa-location-arrow"></i></button>
+								</div>
+							</div>
+							<div class="heading">
+								<p>Al hacer click en comenzar se están aceptando los <a href="#" data-toggle="modal" data-target="#modal-terms-conditions" style="color:whitesmoke">términos y condiciones</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modal-address-incomplete" tabindex="-1" role="dialog" aria-labelledby="modal-address-incomplete-label">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-body">
+								<p>
+									Para continuar ten&#xE9;s que ingresar la direcci&#xF3;n
+								</p>
+							</div>
+							<div class="modal-footer">
+								<button style="background:#90cb3A; border-color: #90cb3A;" type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="modal-terms-conditions" tabindex="-1" role="dialog" aria-labelledby="modal-terms-conditions-label">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-body">
+								<h1 style="color:black"> Terminos y condiciones</h1>
+								<hr>
+								1.- Terminos y condiciones de enerlife....
+								<br>
+								2.- Terminos y condiciones de enerlife....
+								<br>
+								3.- Terminos y condiciones de enerlife....
+							</div>
+							<div class="modal-footer">
+								<button style="background:#90cb3A; border-color: #90cb3A;" type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+		</div>
+	</section>
+	<form action="step2.php" id="form-save" method="get">
+		<input type="hidden" id="lat" name="Lat" />
+		<input type="hidden" id="lng" name="Lng" />
+		<input type="hidden" id="street_number" name="StreetNumber" />
+		<input type="hidden" id="route" name="Street" />
+		<input type="hidden" id="locality" name="City" />
+		<input type="hidden" id="administrative_area_level_1" name="State" />
+		<input type="hidden" id="postal_code" name="ZipCode" />
+		<input type="hidden" id="country" name="CountryName" />
+		<input type="hidden" id="consumptionTypeOnGrid" name="ConsumptionTypeOnGrid" value="true" />
+		<input type="hidden" name="Step" value="2" />
+		<input type="hidden" name="addressSetted" value="true" />
+	</form>
+</main>
+
+    <div id="div-general-message"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/site.urls.js"></script>
+    <script src="js/ajaxRequest.js"></script>
+    <script src="js/site.message-control.js"></script>
+    <script src="js/localStorageManager.js"></script>
+    <script src="js/noty.min.js"></script>
+	<script src="js/datepicker.es.js"></script>
+	<script src="js/globalization.js"></script>
+	<script src="js/region.js"></script>
+
+    <script>
+        var currentCountry = 'cl';
+        var companyName = "Enerlife";
+    </script>
+
+   
+    <!--script src="https://www.solarlatam.com/js/views/home/index.js?v=OGM61_-N3t0u_eIj5iTHuwbqzZEo8dFfJ7Vm5B7mKhg"></script-->
+    <!--script src="https://www.solarlatam.com/js/views/home/indexWWW.js?v=1yZyQ_NUfCY9ry_ris7lJX1ol50CR951Ii7Sq6i8bb8"></script-->
+	<script src="js/indexWWW.js"></script>
+	<script src="js/index.js"></script>
+    <script src="js/step1.js"></script>
+	
+    <!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyDds9Vh-wKnHzim-ySu3i1m88esLt5MyHM&callback=initAddressAutocomplete"></script-->
+	<script type="text/javascript"    src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyBRmaPYAooWQ4CFedveeKZu4Ao85rrgxgg&callback=initAddressAutocomplete"></script>
+    <script>
+        var isInApp = false;
+    </script>
+
+   
+</body>
+</html>

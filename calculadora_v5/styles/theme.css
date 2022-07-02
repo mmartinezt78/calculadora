@@ -1,0 +1,230 @@
+body {
+  color: #231f20;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #febe10;
+  border-color: #febe10;
+  color: #231f20;
+}
+
+.btn-primary:hover {
+  background-color: #ffd939;
+  border-color: #ffd939;
+  color: #231f20;
+}
+
+.btn-outline-primary {
+  border-color: #febe10;
+  color: #febe10;
+}
+
+.btn-secondary {
+  background-color: #f0493e;
+  border-color: #f0493e;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #d22928;
+  border-color: #d22928;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  border-color: #f0493e;
+  color: #f0493e;
+}
+
+.btn-outline-secondary:hover {
+  border-color: #d22928;
+  background-color: #d22928;
+  color: #fff;
+}
+
+.text-info {
+	color: #a7a6a6 !important;
+}
+
+header .bg-transparent {
+  background-color: transparent !important;
+}
+
+@media (max-width: 991px) {
+  header .bg-transparent {
+    background-color: #231f20 !important;
+  }
+  header .dropdown-menu {
+    background-color: transparent;
+    border: none;
+  }
+  header .dropdown-item {
+    color: #fff;
+  }
+  header .dropdown-item:focus,
+  header .dropdown-item:hover {
+	color: rgba(255,255,255,.75);
+  background-color: transparent;
+  }
+}
+
+header .bg-dark {
+  background-color: #231f20 !important;
+}
+
+.navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+  border: none;
+}
+
+.kits .card.selected,
+.kits .card.selected:hover {
+  background-color: #fdf2d3;
+  border-color: #febe10;
+  box-shadow: inset 0px 0px 0px 1px #febe10;
+}
+
+.kits .card:hover {
+  background-color: #fffaec;
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: none;
+}
+
+.kits .card .savings,
+.pill .fact,
+aside dt small {
+  color: #a7a6a6;
+}
+
+.pill {
+	border-color:#;
+}
+
+.input-group-number button {
+	font-size: 18px;
+	color: #007bff;
+}
+
+	.input-group-number button:hover {
+		color: #007bff;
+	}
+
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #231f20;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #231f20;
+}
+
+.supplies li, .supplies li a {
+	color: #f99f38;
+}
+
+	.supplies li.disabled, .supplies li.disabled a {
+		color: #a7a6a6;
+	}
+
+.electrical-appliance .input-group .input-group-prepend, .electrical-appliance .input-group .input-group-append {
+	visibility: hidden;
+}
+
+.electrical-appliance:hover .input-group .input-group-prepend, .electrical-appliance:hover .input-group .input-group-append {
+	visibility: visible;
+}
+
+.electrical-appliance .input-group .form-control {
+	background-color: transparent;
+	font-size: 14px !important;
+}
+
+aside a {
+	color: #007bff;
+}
+
+	aside a:hover {
+		color: #007bff;
+	}
+
+
+.add-invoice {
+  background-color:#fafafa;
+}
+
+.consumer-type a:hover   {
+  text-decoration: none;
+}
+
+.consumer-type .card.active,
+.consumer-type .card.active:hover  {
+	border: 1px solid #febe10;
+	box-shadow: inset 0px 0px 0px 1px #febe10;
+	color: #febe10;
+  background-color: #fffaec;
+}
+
+ .consumer-type .card:hover   {
+  background-color: #fffaec;
+	border: 1px solid rgba(0, 0, 0, .125);
+	box-shadow: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.btn-xs-collapse {
+	padding: 10px !important;
+	line-height: 1;
+	height: 36px;
+	width: 36px;
+}
+
+.pill .icon{
+	width: 65px;
+	display:inline-table;
+}
+
+.btn-outline-info {
+	color: #007bff !important;
+	border-color: #007bff !important;
+}
+
+	.btn-outline-info:hover {
+		background-color: #007bff !important;
+		color: #fff !important;
+	}
+
+
+.btn-info {
+	background-color: #007bff !important;
+	color: #fff !important;
+}
+
+	.btn-info:hover {
+		background-color: #4797e8 !important;
+		border-color: #4797e8 !important;
+	}
